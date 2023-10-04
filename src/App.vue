@@ -1,9 +1,7 @@
 <script setup lang="ts">
+import NotesPage from './pages/NotesPage.vue';
 </script>
 
 <template>
-  <h1 class="text-4xl font-bold font-title">
-    NoteCrypt
-  </h1>
-  <NoteList />
+  <NotesPage />
 </template>
