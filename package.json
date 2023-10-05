@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tiptap/pm": "2.1.11",
+    "@tiptap/starter-kit": "2.1.11",
+    "@tiptap/vue-3": "2.1.11",
     "vue": "3.3.4"
   },
   "devDependencies": {

@@ -1,7 +1,9 @@
+import type { Content } from '@tiptap/vue-3'
+
 export interface Note {
   id: string
   title: string
-  content: string
+  content: Content
   updatedAt: number
 }
 
