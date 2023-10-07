@@ -7,7 +7,6 @@ interface NoteListProps {
   onChangeActiveNote: (id: string) => void
   onDeleteNote: (id: string) => void
 }
-
 defineProps<NoteListProps>()
 </script>
 
@@ -18,7 +17,7 @@ defineProps<NoteListProps>()
       :class="{
         'bg-neutral-200 dark:bg-neutral-600': activeNoteId === note.id
       }"
-      @click="() => onChangeActiveNote?.(note.id)"
+      @click="() => onChangeActiveNote(note.id)"
     >
       <span class="grow max-w-[20ch] text-ellipsis whitespace-nowrap overflow-hidden">
         {{ note.title }}
@@ -27,7 +26,7 @@ defineProps<NoteListProps>()
         type="button"
         title="Delete note"
         class="justify-self-end p-1.5 text-neutral-500 hover:text-neutral-800 focus:text-neutral-800 dark:text-neutral-400 dark:hover:text-white dark:focus:text-white transition-colors"
-        @click="() => onDeleteNote?.(note.id)"
+        @click="() => onDeleteNote(note.id)"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
