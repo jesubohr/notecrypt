@@ -17,7 +17,7 @@ const editor = useEditor({
   content: props.activeNote.content,
   editorProps: {
     attributes: {
-      class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none',
+      class: 'focus:outline-none',
     },
   },
   onUpdate: ({ editor }) => {
